@@ -1,0 +1,467 @@
+
+.guru-profile-page {
+  min-height: 100vh;
+  padding: 35px;
+  background: #f4f7fb;
+  color: #1e293b;
+  box-sizing: border-box;
+}
+
+.guru-profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.guru-profile-header h1 {
+  margin: 0 0 8px;
+  font-size: 28px;
+}
+
+.guru-profile-header p {
+  margin: 0;
+  color: #64748b;
+}
+
+.guru-profile-back {
+  padding: 11px 16px;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.2s ease;
+}
+
+.guru-profile-back:hover {
+  background: #1d4ed8;
+}
+
+.guru-profile-card {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding: 25px;
+  margin-bottom: 22px;
+  background: white;
+  border: 1px solid #e8edf5;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(15, 23, 42, 0.04);
+}
+
+.guru-profile-avatar {
+  width: 105px;
+  height: 105px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 50%;
+  background: #dbeafe;
+  color: #2563eb;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.guru-profile-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.guru-profile-identity h2 {
+  margin: 0 0 8px;
+  font-size: 23px;
+}
+
+.guru-profile-identity p {
+  margin: 0 0 12px;
+  color: #64748b;
+}
+
+.guru-profile-role {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 20px;
+  background: #dcfce7;
+  color: #15803d;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* INFORMASI AKUN */
+
+.guru-profile-details {
+  display: block;
+}
+
+.guru-profile-details h2,
+.guru-profile-card > h2 {
+  margin: 0 0 22px;
+  font-size: 19px;
+}
+
+.guru-profile-detail {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 16px 0;
+  border-bottom: 1px solid #edf0f5;
+}
+
+.guru-profile-detail:last-child {
+  border-bottom: none;
+}
+
+.guru-profile-detail span {
+  color: #64748b;
+}
+
+.guru-profile-detail strong {
+  text-align: right;
+  overflow-wrap: anywhere;
+}
+
+.guru-profile-note {
+  margin: 0;
+  color: #64748b;
+  line-height: 1.7;
+}
+
+.guru-profile-loading {
+  padding: 50px;
+  text-align: center;
+  color: #64748b;
+}
+
+/* PESAN BERHASIL DAN ERROR */
+
+.guru-profile-message {
+  padding: 14px 16px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.guru-profile-message.success {
+  background: #dcfce7;
+  color: #166534;
+}
+
+/* FORM EDIT PROFIL */
+
+.guru-profile-edit,
+.guru-profile-password {
+  display: block;
+}
+
+.guru-profile-edit h2,
+.guru-profile-password h2 {
+  margin: 0 0 22px;
+  font-size: 20px;
+}
+
+.guru-profile-edit-header {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-bottom: 25px;
+}
+
+.guru-profile-photo-control {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.guru-profile-photo-control label,
+.guru-profile-field label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.guru-profile-photo-control input {
+  max-width: 100%;
+}
+
+.guru-profile-photo-control small,
+.guru-profile-field small {
+  color: #64748b;
+  font-size: 12px;
+}
+
+.guru-profile-field {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-bottom: 20px;
+}
+
+.guru-profile-field input {
+  width: 100%;
+  min-height: 44px;
+  padding: 11px 13px;
+  box-sizing: border-box;
+  border: 1px solid #dbe2ea;
+  border-radius: 9px;
+  background: #fff;
+  color: #1e293b;
+  font: inherit;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.guru-profile-field input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.guru-profile-field input[readonly] {
+  background: #f8fafc;
+  color: #64748b;
+}
+
+/* TOMBOL */
+
+.guru-profile-save {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 9px;
+  background: #2563eb;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.guru-profile-save:hover {
+  background: #1d4ed8;
+}
+
+.guru-profile-save:active {
+  transform: scale(0.98);
+}
+
+.guru-profile-save:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.guru-profile-password {
+  margin-top: 22px;
+}
+
+.guru-profile-password .guru-profile-note {
+  margin: -10px 0 22px;
+}
+
+/* ===== MODAL GANTI PASSWORD ===== */
+
+.guru-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  background: rgba(15, 23, 42, 0.58);
+  backdrop-filter: blur(5px);
+  animation: guruOverlayIn 0.2s ease;
+}
+
+.guru-modal {
+  width: 100%;
+  max-width: 480px;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 28px;
+  box-sizing: border-box;
+  border: 1px solid #e8edf5;
+  border-radius: 20px;
+  background: #fff;
+  color: #172033;
+  box-shadow: 0 24px 70px rgba(15, 23, 42, 0.24);
+  animation: guruModalIn 0.22s ease;
+}
+
+.guru-modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 26px;
+}
+
+.guru-modal-header h2 {
+  margin: 0 0 8px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.guru-modal-header p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.guru-modal-close {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 10px;
+  background: #f1f5f9;
+  color: #334155;
+  font-size: 26px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.guru-modal-close:hover {
+  background: #e2e8f0;
+}
+
+.guru-modal-close:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.guru-modal .guru-profile-field {
+  margin-bottom: 20px;
+}
+
+.guru-modal .guru-profile-field input {
+  width: 100%;
+}
+
+.guru-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.guru-modal-cancel {
+  padding: 12px 20px;
+  border: 1px solid #dbe2ea;
+  border-radius: 10px;
+  background: #fff;
+  color: #334155;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.guru-modal-cancel:hover {
+  background: #f1f5f9;
+}
+
+.guru-modal-cancel:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.guru-modal-actions .guru-profile-save {
+  margin: 0;
+}
+
+@keyframes guruOverlayIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes guruModalIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+  .guru-profile-page {
+    padding: 20px 14px;
+  }
+
+  .guru-profile-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .guru-profile-card {
+    padding: 18px;
+    gap: 15px;
+  }
+
+  .guru-profile-avatar {
+    width: 78px;
+    height: 78px;
+    font-size: 28px;
+  }
+
+  .guru-profile-identity h2 {
+    font-size: 19px;
+  }
+
+  .guru-profile-detail {
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .guru-profile-detail strong {
+    text-align: left;
+  }
+
+  .guru-profile-edit-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .guru-profile-save {
+    width: 100%;
+  }
+
+  .guru-modal {
+    padding: 22px;
+    border-radius: 16px;
+  }
+
+  .guru-modal-actions {
+    flex-direction: column-reverse;
+  }
+
+  .guru-modal-actions button {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .guru-modal-overlay,
+  .guru-modal {
+    animation: none;
+  }
+}

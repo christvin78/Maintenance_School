@@ -1,0 +1,549 @@
+/* ========================================
+   GURU PAGE
+======================================== */
+
+.guru-page {
+    min-height: 100vh;
+    background: #f8fafc;
+    color: #1e293b;
+}
+
+/* ========================================
+   NAVBAR
+======================================== */
+
+.guru-page .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.guru-page .navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.guru-page .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #1e293b;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.guru-page .brand-logo {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.guru-page .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.guru-page .nav-links a {
+    text-decoration: none;
+    color: #475569;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.guru-page .nav-links a:hover {
+    color: #2563eb;
+}
+
+.guru-page .login-nav {
+    border: none;
+    background: #ef4444;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.guru-page .login-nav:hover {
+    background: #dc2626;
+    transform: translateY(-1px);
+}
+
+/* ========================================
+   HERO
+======================================== */
+
+.guru-page .hero {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 90px 30px 70px;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.guru-page .hero-content {
+    max-width: 650px;
+}
+
+.guru-page .hero-content h1 {
+    margin: 0 0 20px;
+    font-size: 52px;
+    line-height: 1.15;
+    font-weight: 800;
+    color: #0f172a;
+}
+
+.guru-page .hero-content h1 span {
+    color: #2563eb;
+}
+
+.guru-page .hero-content p {
+    margin: 0 0 30px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #64748b;
+}
+
+.guru-page .hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.guru-page .hero-buttons a {
+    text-decoration: none;
+}
+
+.guru-page .btn-primary {
+    display: inline-block;
+    padding: 13px 25px;
+    background: #2563eb;
+    color: white;
+    border-radius: 9px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.guru-page .btn-primary:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+.guru-page .btn-secondary {
+    display: inline-block;
+    padding: 13px 25px;
+    background: white;
+    color: #2563eb;
+    border: 1px solid #2563eb;
+    border-radius: 9px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.guru-page .btn-secondary:hover {
+    background: #eff6ff;
+    transform: translateY(-2px);
+}
+
+/* ========================================
+   HERO IMAGE
+======================================== */
+
+.guru-page .hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.guru-page .hero-image img {
+    width: 100%;
+    max-width: 480px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 20px 45px rgba(15, 23, 42, 0.15);
+}
+
+/* ========================================
+   STATS
+======================================== */
+
+.guru-page .stats {
+    max-width: 1100px;
+    margin: 20px auto 80px;
+    padding: 0 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.guru-page .stat-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.06);
+    transition: 0.3s;
+}
+
+.guru-page .stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(15, 23, 42, 0.1);
+}
+
+.guru-page .stat-card h2 {
+    margin: 0 0 8px;
+    font-size: 34px;
+    color: #2563eb;
+}
+
+.guru-page .stat-card p {
+    margin: 0;
+    color: #64748b;
+    font-size: 15px;
+}
+
+/* ========================================
+   SERVICES
+======================================== */
+
+.guru-page .services {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 30px;
+}
+
+.guru-page .section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.guru-page .section-title h2 {
+    margin: 0 0 12px;
+    font-size: 36px;
+    color: #0f172a;
+}
+
+.guru-page .section-title p {
+    margin: 0;
+    color: #64748b;
+    font-size: 16px;
+}
+
+.guru-page .service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.guru-page .service-card {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    transition: 0.3s;
+}
+
+.guru-page .service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(15, 23, 42, 0.08);
+}
+
+.guru-page .service-icon {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eff6ff;
+    color: #2563eb;
+    border-radius: 12px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.guru-page .service-card h3 {
+    margin: 0 0 10px;
+    color: #0f172a;
+    font-size: 20px;
+}
+
+.guru-page .service-card p {
+    margin: 0;
+    color: #64748b;
+    line-height: 1.7;
+}
+
+/* ========================================
+   REPORT CTA
+======================================== */
+
+.guru-page .report-section {
+    max-width: 1140px;
+    margin: 40px auto 80px;
+    padding: 55px 40px;
+    background: #2563eb;
+    border-radius: 22px;
+    text-align: center;
+    color: white;
+}
+
+.guru-page .report-section h2 {
+    margin: 0 0 15px;
+    font-size: 34px;
+}
+
+.guru-page .report-section p {
+    max-width: 700px;
+    margin: 0 auto 25px;
+    line-height: 1.7;
+    color: #dbeafe;
+}
+
+.guru-page .report-section a {
+    display: inline-block;
+    text-decoration: none;
+    background: white;
+    color: #2563eb;
+    padding: 13px 25px;
+    border-radius: 9px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.guru-page .report-section a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.guru-page .footer {
+    background: #0f172a;
+    color: white;
+    padding: 50px 30px 25px;
+}
+
+.guru-page .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 50px;
+}
+
+.guru-page .footer h3 {
+    margin: 0 0 15px;
+    font-size: 20px;
+}
+
+.guru-page .footer p {
+    color: #94a3b8;
+    line-height: 1.7;
+}
+
+.guru-page .footer a {
+    display: block;
+    color: #cbd5e1;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.guru-page .footer a:hover {
+    color: white;
+}
+
+.guru-page .footer-bottom {
+    max-width: 1200px;
+    margin: 40px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid #334155;
+    text-align: center;
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+/* ========================================
+   MOBILE MENU
+======================================== */
+
+.guru-page .menu-toggle {
+    display: none;
+    border: none;
+    background: transparent;
+    font-size: 25px;
+    cursor: pointer;
+    color: #0f172a;
+}
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 900px) {
+    .guru-page .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding-top: 60px;
+    }
+
+    .guru-page .hero-content {
+        max-width: 100%;
+    }
+
+    .guru-page .hero-buttons {
+        justify-content: center;
+    }
+
+    .guru-page .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .guru-page .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .guru-page .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .guru-page .navbar-container {
+        padding: 12px 20px;
+    }
+
+    .guru-page .menu-toggle {
+        display: block;
+    }
+
+    .guru-page .nav-links {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        background: white;
+        border-bottom: 1px solid #e2e8f0;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .guru-page .nav-links.active {
+        display: flex;
+    }
+
+    .guru-page .nav-links a,
+    .guru-page .login-nav {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+    }
+
+    .guru-page .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .guru-page .hero-content p {
+        font-size: 16px;
+    }
+
+    .guru-page .hero-image img {
+        height: 280px;
+    }
+
+    .guru-page .services {
+        padding: 60px 20px;
+    }
+
+    .guru-page .section-title h2 {
+        font-size: 30px;
+    }
+
+    .guru-page .report-section {
+        margin: 30px 20px 60px;
+        padding: 40px 25px;
+    }
+
+    .guru-page .report-section h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .guru-page .brand {
+        font-size: 17px;
+    }
+
+    .guru-page .brand-logo {
+        width: 36px;
+        height: 36px;
+    }
+
+    .guru-page .hero {
+        padding: 45px 20px;
+    }
+
+    .guru-page .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .guru-page .hero-buttons {
+        flex-direction: column;
+    }
+
+    .guru-page .hero-buttons a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .guru-page .stats {
+        padding: 0 20px;
+    }
+}
+/* ========================================
+   LOGOUT BUTTON
+======================================== */
+
+.login-nav {
+    border: none;
+    background: transparent;
+    color: #475569;
+    padding: 8px 0;
+    border-radius: 0;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.3s;
+    font-family: inherit;
+}
+
+.login-nav:hover {
+    background: transparent;
+    color: #2563eb;
+    transform: none;
+    box-shadow: none;
+}

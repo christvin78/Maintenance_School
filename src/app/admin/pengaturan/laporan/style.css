@@ -1,0 +1,720 @@
+/* ========================================
+   PENGATURAN LAPORAN ADMIN
+======================================== */
+
+.pengaturan-laporan-page {
+    width: 100%;
+    max-width: 100%;
+    padding-bottom: 40px;
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+.pengaturan-laporan-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 30px;
+
+    margin-bottom: 28px;
+}
+
+
+/* ========================================
+   BREADCRUMB
+======================================== */
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 7px;
+
+    margin-bottom: 10px;
+
+    color: #98a2b3;
+    font-size: 9px;
+}
+
+.breadcrumb a {
+    color: #667085;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    color: #2563eb;
+}
+
+.breadcrumb span:last-child {
+    color: #2563eb;
+    font-weight: 700;
+}
+
+
+/* ========================================
+   TITLE
+======================================== */
+
+.pengaturan-laporan-header h1 {
+    margin: 0 0 7px;
+
+    color: #1d2939;
+
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.pengaturan-laporan-header p {
+    margin: 0;
+
+    color: #667085;
+
+    font-size: 11px;
+}
+
+
+/* ========================================
+   ADMIN USER
+======================================== */
+
+.admin-user-box {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    flex-shrink: 0;
+}
+
+.admin-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 38px;
+    height: 38px;
+
+    border-radius: 50%;
+
+    background: #eef4ff;
+    color: #2563eb;
+
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.admin-user-info {
+    display: flex;
+    flex-direction: column;
+
+    gap: 2px;
+}
+
+.admin-user-info strong {
+    color: #344054;
+    font-size: 10px;
+}
+
+.admin-user-info span {
+    color: #98a2b3;
+    font-size: 8px;
+}
+
+.logout-button {
+    padding: 7px 11px;
+
+    border: 1px solid #e4e7ec;
+    border-radius: 7px;
+
+    background: #ffffff;
+    color: #667085;
+
+    font-family: inherit;
+
+    font-size: 8px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.logout-button:hover {
+    border-color: #f1b8c3;
+    background: #fff7f8;
+    color: #e11d48;
+}
+
+
+/* ========================================
+   INFO BOX
+======================================== */
+
+.laporan-setting-info {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 14px;
+
+    padding: 17px 18px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #dce7ff;
+    border-radius: 12px;
+
+    background: #f7faff;
+}
+
+.info-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 34px;
+    height: 34px;
+
+    flex-shrink: 0;
+
+    border-radius: 9px;
+
+    background: #e8f0ff;
+    color: #2563eb;
+
+    font-size: 15px;
+}
+
+.laporan-setting-info h3 {
+    margin: 0 0 5px;
+
+    color: #344054;
+
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.laporan-setting-info p {
+    margin: 0;
+
+    color: #667085;
+
+    font-size: 9px;
+    line-height: 1.6;
+}
+
+
+/* ========================================
+   STATISTICS
+======================================== */
+
+.laporan-setting-stats {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 14px;
+
+    margin-bottom: 20px;
+}
+
+.setting-stat-card {
+    display: flex;
+    align-items: center;
+
+    gap: 11px;
+
+    padding: 15px;
+
+    border: 1px solid #eaecf0;
+    border-radius: 12px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 2px 8px rgba(16, 24, 40, 0.03);
+}
+
+.setting-stat-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 34px;
+    height: 34px;
+
+    flex-shrink: 0;
+
+    border-radius: 9px;
+
+    font-size: 14px;
+}
+
+.setting-stat-icon.blue {
+    background: #edf4ff;
+    color: #2563eb;
+}
+
+.setting-stat-icon.gray {
+    background: #f2f4f7;
+    color: #667085;
+}
+
+.setting-stat-icon.orange {
+    background: #fff5df;
+    color: #c47a00;
+}
+
+.setting-stat-icon.green {
+    background: #eaf8ef;
+    color: #21874a;
+}
+
+.setting-stat-card span {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #98a2b3;
+
+    font-size: 8px;
+}
+
+.setting-stat-card strong {
+    color: #1d2939;
+
+    font-size: 17px;
+    font-weight: 800;
+}
+
+
+/* ========================================
+   MAIN CARD
+======================================== */
+
+.laporan-setting-card {
+    width: 100%;
+
+    border: 1px solid #eaecf0;
+    border-radius: 14px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 2px 10px rgba(16, 24, 40, 0.03);
+
+    overflow: hidden;
+}
+
+
+/* ========================================
+   CARD HEADER
+======================================== */
+
+.setting-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 18px 20px;
+
+    border-bottom: 1px solid #eef1f5;
+}
+
+.setting-card-header h2 {
+    margin: 0 0 5px;
+
+    color: #1d2939;
+
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.setting-card-header p {
+    margin: 0;
+
+    color: #98a2b3;
+
+    font-size: 9px;
+}
+
+
+/* ========================================
+   DELETE ALL
+======================================== */
+
+.delete-all-button {
+    padding: 8px 12px;
+
+    border: 1px solid #f3c9d1;
+    border-radius: 8px;
+
+    background: #fff7f8;
+    color: #e11d48;
+
+    font-family: inherit;
+
+    font-size: 8px;
+    font-weight: 800;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+
+    transition: 0.2s;
+}
+
+.delete-all-button:hover {
+    border-color: #efaebc;
+
+    background: #fff0f2;
+
+    color: #dc163f;
+
+    transform: translateY(-1px);
+}
+
+
+/* ========================================
+   LIST
+======================================== */
+
+.laporan-setting-list {
+    width: 100%;
+}
+
+
+/* ========================================
+   ITEM
+======================================== */
+
+.laporan-setting-item {
+    display: grid;
+
+    grid-template-columns:
+        34px minmax(0, 1fr) 90px;
+
+    gap: 14px;
+
+    align-items: center;
+
+    padding: 17px 20px;
+
+    border-bottom: 1px solid #eef1f5;
+
+    transition: background 0.2s;
+}
+
+.laporan-setting-item:last-child {
+    border-bottom: none;
+}
+
+.laporan-setting-item:hover {
+    background: #fafcff;
+}
+
+
+/* ========================================
+   NUMBER
+======================================== */
+
+.laporan-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+
+    border-radius: 8px;
+
+    background: #f2f4f7;
+    color: #667085;
+
+    font-size: 9px;
+    font-weight: 800;
+}
+
+
+/* ========================================
+   CONTENT
+======================================== */
+
+.laporan-setting-content {
+    min-width: 0;
+}
+
+.laporan-setting-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 12px;
+
+    margin-bottom: 7px;
+}
+
+.laporan-setting-top h3 {
+    margin: 0 0 4px;
+
+    color: #344054;
+
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.laporan-location {
+    color: #98a2b3;
+
+    font-size: 8px;
+}
+
+.laporan-description {
+    margin: 0 0 8px;
+
+    color: #667085;
+
+    font-size: 9px;
+    line-height: 1.5;
+
+    overflow-wrap: anywhere;
+}
+
+
+/* ========================================
+   STATUS
+======================================== */
+
+.setting-status {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 60px;
+
+    padding: 5px 7px;
+
+    border-radius: 20px;
+
+    font-size: 7px;
+    font-weight: 800;
+
+    white-space: nowrap;
+}
+
+.setting-status-dikirim {
+    background: #eef2f7;
+    color: #667085;
+}
+
+.setting-status-diproses {
+    background: #fff5df;
+    color: #c47a00;
+}
+
+.setting-status-selesai {
+    background: #eaf8ef;
+    color: #21874a;
+}
+
+
+/* ========================================
+   META
+======================================== */
+
+.laporan-meta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    color: #98a2b3;
+
+    font-size: 8px;
+}
+
+
+/* ========================================
+   ACTION
+======================================== */
+
+.laporan-setting-action {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.delete-report-button {
+    width: 100%;
+
+    padding: 8px 7px;
+
+    border: 1px solid #f3c9d1;
+    border-radius: 8px;
+
+    background: #fff7f8;
+    color: #e11d48;
+
+    font-family: inherit;
+
+    font-size: 8px;
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.delete-report-button:hover {
+    border-color: #efaebc;
+
+    background: #fff0f2;
+
+    color: #dc163f;
+
+    transform: translateY(-1px);
+}
+
+.delete-report-button:active {
+    transform: translateY(0);
+}
+
+
+/* ========================================
+   EMPTY STATE
+======================================== */
+
+.empty-laporan-setting {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    min-height: 260px;
+
+    padding: 30px;
+
+    text-align: center;
+}
+
+.empty-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 52px;
+    height: 52px;
+
+    margin-bottom: 12px;
+
+    border-radius: 14px;
+
+    background: #f2f4f7;
+
+    font-size: 21px;
+}
+
+.empty-laporan-setting h3 {
+    margin: 0 0 6px;
+
+    color: #344054;
+
+    font-size: 12px;
+}
+
+.empty-laporan-setting p {
+    max-width: 350px;
+
+    margin: 0;
+
+    color: #98a2b3;
+
+    font-size: 9px;
+    line-height: 1.6;
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 900px) {
+
+    .pengaturan-laporan-header {
+        flex-direction: column;
+    }
+
+    .admin-user-box {
+        align-self: flex-start;
+    }
+
+    .laporan-setting-stats {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 600px) {
+
+    .pengaturan-laporan-header h1 {
+        font-size: 21px;
+    }
+
+    .admin-user-box {
+        width: 100%;
+    }
+
+    .laporan-setting-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .setting-card-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .delete-all-button {
+        width: 100%;
+    }
+
+    .laporan-setting-item {
+        grid-template-columns:
+            30px minmax(0, 1fr);
+
+        gap: 10px;
+
+        padding: 15px;
+    }
+
+    .laporan-setting-action {
+        grid-column: 2;
+        justify-content: flex-start;
+    }
+
+    .delete-report-button {
+        width: 100%;
+    }
+
+    .laporan-setting-top {
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    .setting-status {
+        align-self: flex-start;
+    }
+
+}

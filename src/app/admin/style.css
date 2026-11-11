@@ -1,0 +1,771 @@
+/* ========================================
+   ADMIN LAYOUT
+======================================== */
+
+.admin-page {
+    min-height: 100vh;
+    background: #f5f7fb;
+    color: #172033;
+}
+
+
+/* ========================================
+   SIDEBAR
+======================================== */
+
+.admin-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 245px;
+    height: 100vh;
+    padding: 24px 18px;
+    box-sizing: border-box;
+    background: #ffffff;
+    border-right: 1px solid #e6eaf0;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+}
+
+
+/* ========================================
+   LOGO
+======================================== */
+
+.sidebar-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 4px 8px 25px;
+    border-bottom: 1px solid #edf0f4;
+}
+
+.sidebar-logo-icon {
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #4f7bea
+    );
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 900;
+    box-shadow:
+        0 7px 18px rgba(37, 99, 235, 0.2);
+}
+
+.sidebar-logo h2 {
+    margin: 0 0 2px;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.sidebar-logo span {
+    color: #929aaa;
+    font-size: 9px;
+    font-weight: 600;
+}
+
+
+/* ========================================
+   MENU
+======================================== */
+
+.sidebar-menu {
+    padding-top: 24px;
+}
+
+.sidebar-menu-title {
+    margin: 0 9px 10px;
+    color: #a0a7b4;
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.sidebar-menu-settings {
+    margin-top: 24px;
+}
+
+.sidebar-link {
+    width: 100%;
+    min-height: 43px;
+    margin-bottom: 5px;
+    padding: 0 11px;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    color: #687386;
+    font-size: 11px;
+    font-weight: 700;
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+
+.sidebar-link:hover {
+    background: #f2f5fb;
+    color: #2563eb;
+}
+
+.sidebar-link.active {
+    background: #edf3ff;
+    color: #2563eb;
+}
+
+.sidebar-link-icon {
+    width: 27px;
+    height: 27px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 15px;
+}
+
+
+/* ========================================
+   SIDEBAR BOTTOM
+======================================== */
+
+.sidebar-bottom {
+    margin-top: auto;
+    padding-top: 18px;
+    border-top: 1px solid #edf0f4;
+}
+
+.sidebar-user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 7px 14px;
+}
+
+.sidebar-user-avatar {
+    width: 34px;
+    height: 34px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: #edf3ff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 15px;
+}
+
+.sidebar-user-info {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-user-info strong {
+    overflow: hidden;
+    color: #293548;
+    font-size: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.sidebar-user-info span {
+    margin-top: 3px;
+    color: #9aa2af;
+    font-size: 8px;
+}
+
+.sidebar-logout {
+    width: 100%;
+    min-height: 38px;
+
+    border: 1px solid #f0dce1;
+    border-radius: 9px;
+
+    background: #fff7f8;
+    color: #e11d48;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.sidebar-logout:hover {
+    background: #fff0f2;
+    border-color: #f5cbd4;
+}
+
+
+/* ========================================
+   AREA KONTEN
+======================================== */
+
+.admin-main {
+    min-height: 100vh;
+    margin-left: 245px;
+    width: calc(100% - 245px);
+    box-sizing: border-box;
+}
+
+
+/* ========================================
+   DASHBOARD
+======================================== */
+
+.admin-dashboard {
+    min-height: 100vh;
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+.admin-header {
+    min-height: 105px;
+    padding: 25px 45px;
+    box-sizing: border-box;
+
+    background: #ffffff;
+    border-bottom: 1px solid #e8ebf1;
+
+    display: flex;
+    align-items: center;
+}
+
+.admin-header-label {
+    margin: 0 0 5px;
+    color: #2563eb;
+    font-size: 8px;
+    font-weight: 900;
+    letter-spacing: 1.2px;
+}
+
+.admin-header h1 {
+    margin: 0 0 5px;
+    color: #172033;
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: -0.7px;
+}
+
+.admin-header-description {
+    max-width: 650px;
+    margin: 0;
+    color: #8991a1;
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+
+/* ========================================
+   CONTENT
+======================================== */
+
+.admin-content {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 38px 45px 60px;
+    box-sizing: border-box;
+}
+
+
+/* ========================================
+   INFO SISTEM
+======================================== */
+
+.admin-info-card {
+    margin-top: 20px;
+    padding: 22px;
+
+    border: 1px solid #dfe7f8;
+    border-radius: 15px;
+
+    background: #f8faff;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.admin-info-icon {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+
+    border-radius: 11px;
+    background: #e8f0ff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 18px;
+}
+
+.admin-info-card h3 {
+    margin: 0 0 5px;
+    color: #263244;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.admin-info-card p {
+    max-width: 850px;
+    margin: 0;
+    color: #7d8798;
+    font-size: 10px;
+    line-height: 1.7;
+}
+
+
+/* ========================================
+   DASHBOARD STATISTIK
+======================================== */
+
+.dashboard-statistik {
+    margin-top: 0;
+}
+
+
+/* ========================================
+   HEADER STATISTIK
+======================================== */
+
+.dashboard-statistik-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 25px;
+    margin-bottom: 18px;
+}
+
+.dashboard-statistik-label {
+    margin: 0 0 5px;
+    color: #2563eb;
+    font-size: 8px;
+    font-weight: 900;
+    letter-spacing: 1.2px;
+}
+
+.dashboard-statistik-header h2 {
+    margin: 0 0 5px;
+    color: #263244;
+    font-size: 19px;
+    font-weight: 800;
+}
+
+.dashboard-statistik-header p {
+    margin: 0;
+    color: #8991a1;
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+
+/* ========================================
+   FILTER
+======================================== */
+
+.dashboard-statistik-filter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dashboard-statistik-filter select {
+    min-width: 125px;
+    height: 38px;
+    padding: 0 11px;
+
+    border: 1px solid #dfe4ec;
+    border-radius: 8px;
+
+    background: #ffffff;
+    color: #566176;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    outline: none;
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.dashboard-statistik-filter select:hover {
+    border-color: #b9c8e8;
+}
+
+.dashboard-statistik-filter select:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.08);
+}
+
+
+/* ========================================
+   TOTAL LAPORAN
+======================================== */
+
+.dashboard-statistik-total {
+    min-height: 125px;
+    margin-bottom: 18px;
+    padding: 22px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #dce7fb;
+    border-radius: 15px;
+
+    background: #f7faff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dashboard-statistik-total span {
+    margin-bottom: 7px;
+
+    color: #71809a;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.dashboard-statistik-total strong {
+    color: #2563eb;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.dashboard-statistik-total small {
+    margin-top: 8px;
+
+    color: #8991a1;
+    font-size: 9px;
+}
+
+
+/* ========================================
+   CHART CARD
+======================================== */
+
+.dashboard-chart-card {
+    margin-bottom: 18px;
+    padding: 24px;
+
+    border: 1px solid #e3e8f0;
+    border-radius: 15px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 8px 25px rgba(31, 41, 55, 0.035);
+}
+
+.dashboard-chart-title {
+    margin-bottom: 15px;
+}
+
+.dashboard-chart-title h3 {
+    margin: 0 0 5px;
+
+    color: #263244;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.dashboard-chart-title p {
+    margin: 0;
+
+    color: #8991a1;
+    font-size: 9px;
+}
+
+
+/* ========================================
+   LINE CHART
+======================================== */
+
+.line-chart-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.line-chart {
+    display: block;
+
+    width: 100%;
+    min-width: 650px;
+    height: 320px;
+
+    overflow: visible;
+}
+
+
+/* ========================================
+   GRID CHART
+======================================== */
+
+.chart-grid-line {
+    stroke: #edf0f5;
+    stroke-width: 1;
+    stroke-dasharray: 4 4;
+}
+
+.chart-axis-line {
+    stroke: #dfe4ec;
+    stroke-width: 1;
+}
+
+
+/* ========================================
+   GARIS LINE CHART
+======================================== */
+
+.chart-line {
+    stroke: #2563eb;
+    stroke-width: 4;
+
+    fill: none;
+
+    stroke-linecap: round;
+    stroke-linejoin: round;
+
+    filter:
+        drop-shadow(
+            0 4px 6px
+            rgba(37, 99, 235, 0.18)
+        );
+}
+
+
+/* ========================================
+   TITIK CHART
+======================================== */
+
+.chart-point-outer {
+    fill: #ffffff;
+    stroke: #2563eb;
+    stroke-width: 3;
+}
+
+.chart-point-inner {
+    fill: #2563eb;
+}
+
+
+/* ========================================
+   LABEL CHART
+======================================== */
+
+.chart-value-label {
+    fill: #263244;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.chart-x-label {
+    fill: #687386;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.chart-y-label {
+    fill: #9aa2af;
+    font-size: 9px;
+    font-weight: 600;
+}
+
+
+/* ========================================
+   INFO STATISTIK
+======================================== */
+
+.dashboard-statistik-info {
+    margin-bottom: 20px;
+    padding: 20px 22px;
+
+    border: 1px solid #dfe7f8;
+    border-radius: 15px;
+
+    background: #f8faff;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.dashboard-statistik-info-icon {
+    width: 40px;
+    height: 40px;
+
+    flex-shrink: 0;
+
+    border-radius: 11px;
+
+    background: #e8f0ff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 18px;
+}
+
+.dashboard-statistik-info h3 {
+    margin: 0 0 5px;
+
+    color: #263244;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.dashboard-statistik-info p {
+    max-width: 850px;
+
+    margin: 0;
+
+    color: #7d8798;
+    font-size: 10px;
+    line-height: 1.7;
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 850px) {
+
+    .admin-sidebar {
+        width: 210px;
+    }
+
+    .admin-main {
+        width: calc(100% - 210px);
+        margin-left: 210px;
+    }
+
+    .admin-header {
+        padding: 22px 30px;
+    }
+
+    .admin-content {
+        padding: 30px;
+    }
+
+
+    .dashboard-statistik-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .dashboard-statistik-filter {
+        width: 100%;
+    }
+
+    .dashboard-statistik-filter select {
+        flex: 1;
+        min-width: 0;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .admin-page {
+        display: block;
+    }
+
+    .admin-sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        min-height: auto;
+
+        border-right: none;
+        border-bottom: 1px solid #e6eaf0;
+    }
+
+    .admin-main {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .sidebar-menu {
+        padding-top: 20px;
+    }
+
+    .sidebar-bottom {
+        margin-top: 20px;
+    }
+
+    .admin-header {
+        padding: 25px 20px;
+    }
+
+    .admin-content {
+        padding: 25px 20px 45px;
+    }
+
+    .dashboard-statistik {
+        margin-top: 0;
+    }
+
+    .dashboard-chart-card {
+        padding: 18px;
+    }
+
+    .dashboard-statistik-info {
+        flex-direction: column;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .admin-header h1 {
+        font-size: 22px;
+    }
+
+    .admin-header-description {
+        font-size: 10px;
+    }
+
+    .dashboard-statistik-filter {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .dashboard-statistik-filter select {
+        width: 100%;
+    }
+
+}
